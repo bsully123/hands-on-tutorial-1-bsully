@@ -3,7 +3,7 @@ name: Antithesis - Python Echo Server
 env:
   WEBHOOK_CREDENTIALS: ${{ secrets.ANTITHESIS_USER_NAME }}:${{ secrets.ANTITHESIS_PASSWORD }}
   REGISTRY: us-central1-docker.pkg.dev
-  REPOSITORY: us-central1-docker.pkg.dev/molten-verve-216720/${{ vars.ANTITHESIS_REPOSITORY_NAME }}-repository
+  REPOSITORY: us-central1-docker.pkg.dev/molten-verve-216720/honey-whale-repository
   TENANT_DOMAIN: ${{ vars.ANTITHESIS_TENANT_DOMAIN }}
   IMAGES_PREFIX: python-echo-server
   IMAGES_TAG: ${{ github.run_number }}_${{github.sha}}
