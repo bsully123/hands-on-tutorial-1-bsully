@@ -4,7 +4,7 @@ env:
   WEBHOOK_CREDENTIALS: ${{ secrets.ANTITHESIS_USER_NAME }}:${{ secrets.ANTITHESIS_PASSWORD }}
   REGISTRY: us-central1-docker.pkg.dev
   REPOSITORY: us-central1-docker.pkg.dev/molten-verve-216720/honey-pwhale-repository
-  TENANT_DOMAIN: ${{ vars.ANTITHESIS_TENANT_DOMAIN }}
+  TENANT_DOMAIN: tutorial
   IMAGES_PREFIX: python-echo-server
   IMAGES_TAG: ${{ github.run_number }}_${{github.sha}}
   INPUT_DURATION: ${{ github.event.inputs.duration }}
